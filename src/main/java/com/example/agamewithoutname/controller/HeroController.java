@@ -1,2 +1,4 @@
-package com.example.agamewithoutname.controller;public class HeroController {
+package com.example.agamewithoutname.controller;
+
+public class HeroController {
 }

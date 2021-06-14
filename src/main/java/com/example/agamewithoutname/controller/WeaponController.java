@@ -1,2 +1,4 @@
-package com.example.agamewithoutname.controller;public class WeaponController {
+package com.example.agamewithoutname.controller;
+
+public class WeaponController {
 }
