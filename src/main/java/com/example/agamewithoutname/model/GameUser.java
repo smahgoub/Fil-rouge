@@ -2,12 +2,11 @@ package com.example.agamewithoutname.model;
 
 import javax.persistence.*;
 
-@Table (name="appuser")
 @Entity
-public class User {
+public class GameUser {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_id_seq")
-    @SequenceGenerator(name = "user_id_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "game_user_id_seq")
+    @SequenceGenerator(name = "game_user_id_seq", allocationSize = 1)
     private int id;
 
     private String name;
