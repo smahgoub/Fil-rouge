@@ -1,0 +1,23 @@
+button {
+    display: flex;
+    padding: 0.3rem;
+    background-color: brown;
+    border: none;
+    border-radius: 0.2rem;
+    transition: all 0.5s ease-out;
+    color: white;
+    font-weight: bold;
+}
+
+table {
+    margin: 1rem auto;
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px black solid;
+}
+
+td, th {
+    padding: 0.3rem;
+}
