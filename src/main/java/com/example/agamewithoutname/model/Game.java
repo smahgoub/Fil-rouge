@@ -12,7 +12,7 @@ public class Game {
 
     @ManyToOne
     @JoinColumn(name="appuser")
-    private User user;
+    private GameUser gameUser;
 
     @ManyToOne
     private Weapon weapon;
@@ -28,8 +28,8 @@ public class Game {
         return id;
     }
 
-    public User getUser() {
-        return user;
+    public GameUser getUser() {
+        return gameUser;
     }
 
     public Weapon getWeapon() {
