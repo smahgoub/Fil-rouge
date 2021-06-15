@@ -40,11 +40,19 @@
             <artifactId>springfox-swagger2</artifactId>
             <version>3.0.0</version>
         </dependency>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2b81a0a8479c7a5b831b132b2038968fa3fc89fc
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-boot-starter</artifactId>
             <version>3.0.0</version>
         </dependency>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2b81a0a8479c7a5b831b132b2038968fa3fc89fc
     </dependencies>
     <build>
         <plugins>
