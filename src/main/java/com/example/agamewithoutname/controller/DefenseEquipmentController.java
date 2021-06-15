@@ -8,7 +8,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/admin/defenseequipment")
-public class DefenseEquipmentController {
+public class
+
+DefenseEquipmentController {
 
     private DefenseEquipmentRepository defenseEquipmentRepository;
 

@@ -26,9 +26,9 @@ public class WeaponController {
     }
 
     // Création de nouvelles armes
-    @PutMapping
-    public saveWeapon(@RequestBody Weapon weaponToSave) {
-        return weaponRepository.save(weaponToSave);
+    //@PutMapping
+    //public saveWeapon(@RequestBody Weapon weaponToSave) {
+      //  return weaponRepository.save(weaponToSave);
     }
 
 //    // Supprimer une arme par son id
@@ -37,5 +37,4 @@ public class WeaponController {
 //        weaponRepository.delete((id));
 //    }
 
-}
 
