@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RestController
+@CrossOrigin (origins = "*")
+@RequestMapping("/api/admin/decorelement")
 public class DecorElementController {
 
     private DecorElementRepository decorElementRepository;
