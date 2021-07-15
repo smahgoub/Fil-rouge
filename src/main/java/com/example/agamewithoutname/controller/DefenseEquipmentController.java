@@ -17,17 +17,19 @@ public class DefenseEquipmentController {
         this.defenseEquipmentRepository = defenseEquipmentRepository;
     }
 
+    // Sélection de tous les équipements défensifs
     @GetMapping
     public List<DefenseEquipment>GetAllDefenseEquipment() {
         return defenseEquipmentRepository.findAll();
     }
 
-
+    // Création de nouveaux équipements défensifs
     @PostMapping
     public void createDefenseEquipment(@RequestBody  DefenseEquipment defenseEquipmentToCreate) {
         defenseEquipmentRepository.save(defenseEquipmentToCreate);
     }
 
+// Suppression des éléments du décor
 //    @DeleteMapping
 //    public void delete(@PathVariable("identifiant") Long id){
 //        defenseEquipmentRepository.deleteById(id);
