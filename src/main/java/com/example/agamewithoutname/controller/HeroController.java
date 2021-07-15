@@ -1,5 +1,4 @@
 package com.example.agamewithoutname.controller;
-
 import com.example.agamewithoutname.model.Hero;
 import com.example.agamewithoutname.repository.HeroRepository;
 import org.springframework.web.bind.annotation.*;
@@ -32,9 +31,9 @@ public class HeroController {
         heroRepository.save(heroToUpdate);
     }
 
-    // Suppression d'un nouveaux héros
+    // Suppression d'un nouveaux héros (via son id)
     @DeleteMapping ("{id}")
-    public void deleteHero(@PathVariable Integer id) {
+    public void deleteHero(@PathVariable Long id) {
         heroRepository.deleteById(id);
     }
 }

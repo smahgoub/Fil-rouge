@@ -6,7 +6,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+<<<<<<< HEAD
 @CrossOrigin(origins = "*")
+=======
+@CrossOrigin (origins = "*")
+>>>>>>> main
 @RequestMapping("/api/admin/gameuser")
 public class GameUserController {
 
