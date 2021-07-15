@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @CrossOrigin(origins = "*")
 @RequestMapping("/api/admin/gameuser")
-public class GameUserController {
+public class gitGameUserController {
 
     private GameUserRepository gameUserRepository;
 
