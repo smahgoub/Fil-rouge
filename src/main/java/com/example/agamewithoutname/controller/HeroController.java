@@ -15,6 +15,7 @@ public class HeroController {
 
     public HeroController(HeroRepository heroRepository) {
         this.heroRepository = heroRepository;}
+
     // Sélection de tous les héros
     @GetMapping
     public List<Hero> getAllHero() {return heroRepository.findAll();}
@@ -24,12 +25,15 @@ public class HeroController {
     public void createHero(@RequestBody Hero heroToCreate) {
         heroRepository.save(heroToCreate);
     }
+
     // Modification de nouveaux héros
     @PutMapping
     public void updateHero(@RequestBody Hero heroToUpdate) {
         heroRepository.save(heroToUpdate);
     }
-    // Suppression d'un nouveaux héros
+
+
+    // Suppression d'un nouveaux héros (via son id)
     @DeleteMapping ("{id}")
     public void deleteHero(@PathVariable Integer id) {
         heroRepository.deleteById(id);

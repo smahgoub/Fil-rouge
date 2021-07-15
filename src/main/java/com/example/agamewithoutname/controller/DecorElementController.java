@@ -1,9 +1,7 @@
 package com.example.agamewithoutname.controller;
-
 import com.example.agamewithoutname.model.DecorElement;
 import com.example.agamewithoutname.repository.DecorElementRepository;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController

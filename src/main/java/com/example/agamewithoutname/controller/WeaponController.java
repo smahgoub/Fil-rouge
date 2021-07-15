@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin (origins = "*")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/admin/weapon")
 public class WeaponController {
 
@@ -27,16 +27,15 @@ public class WeaponController {
         weaponRepository.save(weaponToCreate);
     }
 
-    // Mise à jour de nouvelles armes
+    // Modification de nouvelles armes
     @PutMapping
     public void updateWeapon(@RequestBody Weapon weaponToUpdate) {
         weaponRepository.save(weaponToUpdate);
     }
 
-//    // Supprimer une arme par son id
-//    @DeleteMapping("/{id}")
-//    public void deleteWeapon(@PathVariable Long id) {
-//        weaponRepository.delete((id));
-//    }
-
+    // Suppression d'arme (via son id)
+    @DeleteMapping("/{id}")
+    public void deleteWeapon(@PathVariable Long id) {
+    weaponRepository.delete((id));
+   }
 }
