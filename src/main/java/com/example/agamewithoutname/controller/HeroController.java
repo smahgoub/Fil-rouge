@@ -5,9 +5,9 @@ import com.example.agamewithoutname.repository.HeroRepository;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
-@RestController
+@RestController // car on fait une API Rest
 @CrossOrigin(origins = "*") // Permet à tout le monde de venir modifier l'API, car Angular et l'API ne tournent pas au même endroit
-// Si on ne met pas Origin, mon Front-Ed ne communiquera pas avec l'API
+// Si on ne met pas Origin, mon Front-End ne communiquera pas avec l'API
 @RequestMapping("/api/admin/hero")
 public class HeroController {
 
