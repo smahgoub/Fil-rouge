@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+// Chercher sa signification????
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/admin/enemy")
 public class EnemyController {
 

@@ -3,10 +3,11 @@ package com.example.agamewithoutname.controller;
 import com.example.agamewithoutname.model.Hero;
 import com.example.agamewithoutname.repository.HeroRepository;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*") // Permet à tout le monde de venir modifier l'API, car Angular et l'API ne tournent pas au même endroit
+// Si on ne met pas Origin, mon Front-Ed ne communiquera pas avec l'API
 @RequestMapping("/api/admin/hero")
 public class HeroController {
 
@@ -15,17 +16,25 @@ public class HeroController {
     public HeroController(HeroRepository heroRepository) {
         this.heroRepository = heroRepository;}
 
-    //Get pour récupérer le liste des héros existants
+    // Sélection de tous les héros
     @GetMapping
     public List<Hero> getAllHero() {return heroRepository.findAll();}
 
-    //PostMapping pour créer de nouveaux héros
+    // Création de nouveaux héros
     @PostMapping
     public void createHero(@RequestBody Hero heroToCreate) {
         heroRepository.save(heroToCreate);
     }
 
-    //DeleteMapping pour supprimer un heros
-    //@DeleteMapping("/id")
-    //public void deleteHero(@PathVariable Integer id) {heroRepository.delete(id);}
+    // Modification de nouveaux héros
+    @PutMapping
+    public void updateHero(@RequestBody Hero heroToUpdate) {
+        heroRepository.save(heroToUpdate);
+    }
+
+    // Suppression d'un nouveaux héros
+    @DeleteMapping ("{id}")
+    public void deleteHero(@PathVariable Integer id) {
+        heroRepository.deleteById(id);
+    }
 }
