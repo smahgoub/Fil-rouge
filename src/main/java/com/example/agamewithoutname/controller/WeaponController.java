@@ -35,7 +35,7 @@ public class WeaponController {
 
     // Suppression d'arme (via son id)
     @DeleteMapping("/{id}")
-    public void deleteWeapon(@PathVariable Long id) {
-    weaponRepository.delete((id));
+    public void deleteWeapon(@PathVariable Integer id) {
+    weaponRepository.deleteById((id));
    }
 }
