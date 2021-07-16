@@ -1,5 +1,6 @@
 package com.example.agamewithoutname.controller;
 
+import com.example.agamewithoutname.model.DecorElement;
 import com.example.agamewithoutname.model.DefenseEquipment;
 import com.example.agamewithoutname.repository.DefenseEquipmentRepository;
 import org.springframework.web.bind.annotation.*;
@@ -28,14 +29,14 @@ public class DefenseEquipmentController {
     public void createDefenseEquipment(@RequestBody  DefenseEquipment defenseEquipmentToCreate) {
         defenseEquipmentRepository.save(defenseEquipmentToCreate);
     }
+    @PutMapping
+    public void updateDefenseEquipment(@RequestBody DefenseEquipment defenseEquipmentToUpdate) {
+        defenseEquipmentRepository.save(defenseEquipmentToUpdate);
+    }
 
-// Suppression des éléments du décor
-//    @DeleteMapping
-//    public void delete(@PathVariable("identifiant") Long id){
-//        defenseEquipmentRepository.deleteById(id);
-//        System.out.println("Suppression de l'entité avec l'id :" +id);
-//    }
-
-
+    @DeleteMapping
+    public void deleteDefenseEquipment(@PathVariable Integer id) {
+        defenseEquipmentRepository.deleteById(id);
+    }
 
 }
