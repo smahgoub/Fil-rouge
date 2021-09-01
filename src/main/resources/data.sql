@@ -1,2 +1,0 @@
--- insert into enemy (id, name, type) VALUES (nextval('enemy_id_seq'), 'La Momie', 'Big Boss'),
---                                                   (nextval('enemy_id_seq'), 'Scorpion', 'Mini Boss');

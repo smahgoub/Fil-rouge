@@ -1,10 +1,7 @@
 package com.example.agamewithoutname.controller;
-
-import com.example.agamewithoutname.model.Enemy;
 import com.example.agamewithoutname.model.GameUser;
 import com.example.agamewithoutname.repository.GameUserRepository;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -27,7 +24,6 @@ public class GameUserController {
         gameUserRepository.save(gameUserToCreate);
     }
 
-
     // Modification de nouveaux users
     @PutMapping
     public void updateGameUser(@RequestBody GameUser gameUserToUpdate) {
@@ -39,7 +35,4 @@ public class GameUserController {
     public void deleteEnemy(@PathVariable Integer id) {
         gameUserRepository.deleteById(id);
     }
-
-
-
 }

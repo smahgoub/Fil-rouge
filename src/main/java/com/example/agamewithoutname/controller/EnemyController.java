@@ -27,7 +27,6 @@ public class EnemyController {
      enemyRepository.save(enemyToCreate);
 }
 
-
     // Modification de nouveaux ennemis
     @PutMapping
     public void updateEnemy(@RequestBody Enemy enemyToUpdate) {

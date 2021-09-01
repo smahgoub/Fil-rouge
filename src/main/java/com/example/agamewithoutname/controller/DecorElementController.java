@@ -30,7 +30,7 @@ public class DecorElementController {
         decorElementRepository.save(decorElementToUpdate);
     }
 
-    @DeleteMapping
+    @DeleteMapping("{id}")
     public void deleteDecorElement(@PathVariable Integer id) {
     decorElementRepository.deleteById(id);
     }
