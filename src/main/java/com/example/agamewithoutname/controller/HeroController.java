@@ -32,7 +32,6 @@ public class HeroController {
         heroRepository.save(heroToUpdate);
     }
 
-
     // Suppression d'un nouveaux héros (via son id)
     @DeleteMapping ("{id}")
     public void deleteHero(@PathVariable Integer id) {

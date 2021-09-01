@@ -34,7 +34,7 @@ public class DefenseEquipmentController {
         defenseEquipmentRepository.save(defenseEquipmentToUpdate);
     }
 
-    @DeleteMapping
+    @DeleteMapping("{id}")
     public void deleteDefenseEquipment(@PathVariable Integer id) {
         defenseEquipmentRepository.deleteById(id);
     }
